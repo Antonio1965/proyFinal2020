@@ -4,7 +4,8 @@ export const StyledCart = styled.main`
   display: flex;
   justify-content: center;
 
-  padding-top: 15vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 
   .no-items {
     padding-top: 30vh;

@@ -6,7 +6,7 @@ import { CartItem } from "./CartItem";
 import { StyledCart, CartDetail } from "./CartStyles";
 
 
-export const Cart = ({children}) => {
+export const Cart = () => {
   const { cart, removeFromCart } = useContext(Context);
 
   return (

@@ -15,11 +15,11 @@ export const StyledCartItem = styled.div`
     text-align: right;
 
     p {
-      margin-bottom: 0;
+      margin-bottom: 0.5rem;
     }
 
     span {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       color: grey;
     }
   }

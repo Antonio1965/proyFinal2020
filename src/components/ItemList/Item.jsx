@@ -10,7 +10,7 @@ export const Item = ({ item }) => {
           <hr></hr>
           <p>{item.description}</p>
           <p>
-            Precio: <span>{item.price}</span>
+            Precio: $ <span>{item.price}</span>
           </p>
         </div>
       </div>

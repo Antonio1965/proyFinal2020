@@ -1,6 +1,6 @@
 import { makeStyles, Button } from "@material-ui/core";
 import accounting from "accounting";
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../Context";
 
@@ -18,9 +18,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Total = ({children}) => {
+export const Total = () => {
   const classes = useStyles();
-  const [cart, setCart] = useState([]);
   const{ totalCart, quantityCart} = useContext(Context);
   
 
