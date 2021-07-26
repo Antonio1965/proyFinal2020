@@ -2,7 +2,9 @@ import { makeStyles, Button } from "@material-ui/core";
 import accounting from "accounting";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Context } from '../../Context';
+import { Context } from "../../Context";
+import { DataProvider } from "../../Context";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,15 +18,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Total = (children) => {
+export const Total = ({children}) => {
   const classes = useStyles();
   const [cart, setCart] = useState([]);
   
 
   return (
     <div className={classes.root}>
-      <h5>Total items:{5}</h5>
-      <h5> {accounting.formatMoney((45000), )}</h5>
+      <h5>Total items:{3}</h5>
+      <h5> TOTAL COMPRAS :  {accounting.formatMoney((45000), )}</h5>
       <Link to="/checkout">
         <Button
           className={classes.button}

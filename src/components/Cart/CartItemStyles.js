@@ -25,7 +25,7 @@ export const StyledCartItem = styled.div`
   }
 
   .trash {
-    width: 1rem;
+    width: 1.8rem;
     background-color: ${(props) => props.theme.special};
     padding: 0.25rem;
     transition: all 0.5s;

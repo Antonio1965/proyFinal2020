@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledCartItem } from "./CartItemStyles";
-// import trash from "../../../assets/trash.svg";
+import tacho from '../../img/descarga.png';
 
 export const CartItem = ({ item, removeFromCart }) => {
   const handleRemoval = () => removeFromCart(item);
@@ -11,6 +11,7 @@ export const CartItem = ({ item, removeFromCart }) => {
       <div>
         <h3>{item.name}</h3>
         <p>Puntajes: {item.rating}</p>
+        <br/>
         <span>
           {item.quantity} * ${item.price} = ${item.quantity * item.price}
         </span>
@@ -19,12 +20,14 @@ export const CartItem = ({ item, removeFromCart }) => {
          Sub-Total =  $ {item.quantity * item.price}
           </span>
         <br />
-        {/* <img
-          src={trash}
+        <br/>
+        {/* <p>Elimino :</p> */}
+        <img
+          src={tacho}
           onClick={handleRemoval}
           alt="Eliminar elemento"
           className="trash" 
-        /> */}
+        />
       </div>
       </StyledCartItem>
     
