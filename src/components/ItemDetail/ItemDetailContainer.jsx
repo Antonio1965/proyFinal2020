@@ -16,7 +16,7 @@ export const ItemDetailContainer = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(itemsArray.find((item) => item.id.toString() === idParams));
-      }, 4000);
+      }, 2000);
     });
   };
 

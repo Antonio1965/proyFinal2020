@@ -143,11 +143,12 @@
 		}
 	}
   .boton-comprar{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 1rem;
     background-color: crimson;
-    border-radius: 10px;
+    border-radius: 5px;
     color: azure;
+    border:none;
 
   }
   .terminado{
@@ -155,8 +156,9 @@
     margin-top: 10px;
     margin-bottom: 1rem;
     background-color: crimson;
-    border-radius: 10px;
+    border-radius: 5px;
     color: azure;
+    border:none;
   }
   .modificado{
     font-size: 20px;
@@ -164,8 +166,9 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     background-color: crimson;
-    border-radius: 10px;
+    border-radius: 5px;
     color: azure;
+    border:none;
   }
   }
   .pagina-error{
