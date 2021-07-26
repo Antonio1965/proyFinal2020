@@ -30,7 +30,7 @@ export const DataProvider = ({ children }) => {
 
   ///RETURN
   return (
-    <Context.Provider value={{ addToCart, removeFromCart, clearCart }}>
+    <Context.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
       {children}
     </Context.Provider>
   );
