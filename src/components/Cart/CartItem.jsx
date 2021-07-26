@@ -21,7 +21,6 @@ export const CartItem = ({ item, removeFromCart }) => {
           </span>
         <br />
         <br/>
-        {/* <p>Elimino :</p> */}
         <img
           src={tacho}
           onClick={handleRemoval}

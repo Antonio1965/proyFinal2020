@@ -10,6 +10,9 @@ import {Badge} from '@material-ui/core';
 import logo from '../../img/logo/antonio1.svg';
 import { ShoppingCart } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
+import { DataProvider } from '../../Context';
+import { Context } from '../../Context';
+import { useContext } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
 export  function NavBar({title}) {
   const classes = useStyles();
+  const{cart, quantityCart} = useContext(Context);
 
   return (
     <div className={classes.root}>
@@ -66,7 +70,7 @@ export  function NavBar({title}) {
             </Link>
             <Link to='/cart'>
             <IconButton aria-label="show cart items" color="inherent">
-              <Badge badgeContent={3} color="secondary">
+              <Badge badgeContent={quantityCart()} color="secondary">
                 <ShoppingCart
                   fontSize="large"
                   className="carro"
