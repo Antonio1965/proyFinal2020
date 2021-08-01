@@ -1,4 +1,4 @@
-import React from "react";
+
 import { StyledCartItem } from "./CartItemStyles";
 import tacho from '../../img/descarga.png';
 

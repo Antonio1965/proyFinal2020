@@ -5,8 +5,6 @@ export const Context = createContext();
 export const DataProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  ///FUNCIONES
-
   const isntInCart = (receivedItem) =>
     cart.filter((item) => item.id === receivedItem.id).length === 0;
 
@@ -37,7 +35,6 @@ export const DataProvider = ({ children }) => {
 }
 
 
-  ///RETURN
   return (
     <Context.Provider value={{ cart, addToCart, removeFromCart, clearCart, quantityCart, totalCart}}>
       {children}

@@ -9,16 +9,31 @@ import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer
 import { Checkout } from "./components/CheckoutForm/Checkout";
 import { DataProvider } from "./Context";
 import { Cart } from './components/Cart/Cart';
+import { Signin } from '../src/Signin';
+import { Signup } from '../src/Signup';
+import { useEffect } from "react";
+import { auth } from "./firebase";
+
 
 export const App = () => {
+
   return (
     <>
       <DataProvider>
         <Router>
           <NavBar title="Drone.Co" />
           <Switch>
+            <Route exact path='/signin'>
+              <Signin/>
+              </Route>
+              <Route exact path='/signup'>
+              <Signup/>
+              </Route>
             <Route path="/cart">
               <Cart />
+            </Route>
+            <Route exact path="/category/:catId">
+              <ItemListContainer />
             </Route>
             <Route exact path="/">
               <ItemListContainer />

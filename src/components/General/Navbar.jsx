@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import { Context } from '../../Context';
 import { useContext } from 'react';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -56,11 +57,26 @@ export  function NavBar({title}) {
               <h1 className="nav-title">{title}</h1>
             </IconButton>
             </Link>
+          
+            <div className= {classes.grow} />
+          <Typography variant="h6" component="p">
+            <strong>Basico</strong>
+          </Typography>
+          <div className={classes.grow} />
+          <Typography variant="h6" component="p">
+            <strong>Profesional</strong>
+          </Typography>
+          <div className={classes.grow} />
+          <Typography variant="h6" component="p">
+            <strong>Militar</strong>
+          </Typography>
+          
+
           <div className={classes.grow} />
           <Typography variant="h5" component="p">
-            <strong>Hello : Guest</strong>
+            <strong>Hello : Guest </strong>
           </Typography>
-          <Link to='/sign-in'>
+          <Link to='/signin'>
           <div className={classes.button}>
             <Button  variant= 'outlined'>
            <span className='boton'>Sing In</span> 

@@ -1,5 +1,4 @@
 
-
 export const Counter = ({ initial, stock, count, setCount }) => {
   const addUp = () => {
     count < stock && setCount(count + 1);

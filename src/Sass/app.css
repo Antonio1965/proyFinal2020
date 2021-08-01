@@ -42,6 +42,9 @@
   * .nav-title {
     display: none;
   }
+  * .strong {
+    display: none;
+  }
 }
 
 * .card-item {
