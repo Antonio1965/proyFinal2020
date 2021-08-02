@@ -9,7 +9,7 @@
 //     appId: "1:50872635810:web:549231d1edbcc02c3c22fb"
 //   };
 
-//   // const firebaseApp = firebase.initializeApp(firebaseConfig);
+//   const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 //   const auth = firebase.auth();
 

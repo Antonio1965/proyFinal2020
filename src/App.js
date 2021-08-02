@@ -12,7 +12,8 @@ import { Cart } from './components/Cart/Cart';
 import { Signin } from '../src/Signin';
 import { Signup } from '../src/Signup';
 import { useEffect } from "react";
-import { auth } from "./firebase";
+import { auth } from "./auth";
+
 
 
 export const App = () => {

@@ -9,9 +9,10 @@ import IconButton from '@material-ui/core/IconButton';
 import {Badge} from '@material-ui/core';
 import logo from '../../img/logo/antonio1.svg';
 import { ShoppingCart } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 import { Context } from '../../Context';
 import { useContext } from 'react';
+import { categories } from '../data/data.json';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -57,7 +58,7 @@ export  function NavBar({title}) {
               <h1 className="nav-title">{title}</h1>
             </IconButton>
             </Link>
-          
+
             <div className= {classes.grow} />
           <Typography variant="h6" component="p">
             <strong>Basico</strong>
@@ -76,13 +77,13 @@ export  function NavBar({title}) {
           <Typography variant="h5" component="p">
             <strong>Hello : Guest </strong>
           </Typography>
-          <Link to='/signin'>
+          {/* <Link to='/signin'> */}
           <div className={classes.button}>
             <Button  variant= 'outlined'>
            <span className='boton'>Sing In</span> 
             </Button>
           </div>
-            </Link>
+            {/* </Link> */}
             <Link to='/cart'>
             <IconButton aria-label="show cart items" color="inherent">
               <Badge badgeContent={quantityCart()} color="secondary">

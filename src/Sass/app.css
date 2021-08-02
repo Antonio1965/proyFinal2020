@@ -8,6 +8,24 @@
   list-style: none;
 }
 
+* :root {
+  --color-principal: crimson;
+  --color-secundario: #ec2f4b;
+  --blanco: #fff;
+  --text: #333;
+}
+
+* html {
+  font-family: "Poppin", sans-serif;
+  font-size: 10px;
+}
+
+* .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
 * .nav-title {
   display: -webkit-box;
   display: -ms-flexbox;

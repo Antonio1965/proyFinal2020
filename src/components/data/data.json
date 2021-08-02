@@ -1,0 +1,19 @@
+{
+ "categories": 
+ [
+    {
+      "catId": "1",
+      "name": "basico"
+    },
+    {
+      "catId": "2",
+      "name": "profesional"
+    },
+    {
+      "catId": "3",
+      "name": "militar"
+    }
+    
+  ]
+
+}

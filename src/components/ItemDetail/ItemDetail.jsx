@@ -25,6 +25,8 @@ export const ItemDetail = ({ itemToDisplay: item }) => {
         <h1>{item.name}</h1>
         <img src={item.image} alt={item.title} />
         <hr></hr>
+        <h4>{item.productType}</h4>
+        <hr></hr>
         <h5>{item.description}</h5>
         {!finished ? (
           <>
