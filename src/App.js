@@ -13,10 +13,13 @@ import { Signin } from '../src/Signin';
 import { Signup } from '../src/Signup';
 import { useEffect } from "react";
 import { auth } from "./auth";
+import { Newsletter } from "./components/Newsletter/Newsletter";
+
 
 
 
 export const App = () => {
+
 
   return (
     <>
@@ -33,8 +36,8 @@ export const App = () => {
             <Route path="/cart">
               <Cart />
             </Route>
-            <Route exact path="/category/:catId">
-              <ItemListContainer />
+            <Route path="/category/:catId">
+              <ItemListContainer/>
             </Route>
             <Route exact path="/">
               <ItemListContainer />
@@ -47,6 +50,7 @@ export const App = () => {
             </Route>
             <Route component={Error404} />
           </Switch>
+          <Newsletter/>
           <Footer autor="Copyright &copy; -Tsutsumi Jose Antonio - Junio 2021." />
         </Router>
       </DataProvider>

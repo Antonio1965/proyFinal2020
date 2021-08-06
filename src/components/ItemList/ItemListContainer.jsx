@@ -11,7 +11,7 @@ export const ItemListContainer = () => {
   const { catId } = useParams();
 
   useEffect(() => {
-    setDisplayItems([]);
+    setDisplayItems([ ]);
 
 
     const getItems = () => {
@@ -32,7 +32,7 @@ export const ItemListContainer = () => {
     };
 
     getItems();
-  }, [catId]);
+  }, [ catId ]);
 
   return !displayItems.length ? (
     <Loader />

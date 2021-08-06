@@ -9,10 +9,11 @@ import IconButton from '@material-ui/core/IconButton';
 import {Badge} from '@material-ui/core';
 import logo from '../../img/logo/antonio1.svg';
 import { ShoppingCart } from '@material-ui/icons';
-import { Link, NavLink} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Context } from '../../Context';
 import { useContext } from 'react';
 import { categories } from '../data/data.json';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -59,20 +60,17 @@ export  function NavBar({title}) {
             </IconButton>
             </Link>
 
-            <div className= {classes.grow} />
-          <Typography variant="h6" component="p">
-            <strong>Basico</strong>
-          </Typography>
-          <div className={classes.grow} />
-          <Typography variant="h6" component="p">
-            <strong>Profesional</strong>
-          </Typography>
-          <div className={classes.grow} />
-          <Typography variant="h6" component="p">
-            <strong>Militar</strong>
-          </Typography>
-          
-
+          <ul className="categories">
+                 {categories.map((cat) => (
+                <Link
+                     to={`/category/${cat.id}`}
+                      key={cat.id}
+                      className="category-item">
+                     {cat.name}
+                 </Link>
+                       ))}
+          </ul>
+      
           <div className={classes.grow} />
           <Typography variant="h5" component="p">
             <strong>Hello : Guest </strong>

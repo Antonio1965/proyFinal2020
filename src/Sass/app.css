@@ -223,4 +223,64 @@
   border-radius: 10px;
   color: azure;
 }
+
+* .category-item {
+  margin-left: 1rem;
+  font-family: "Fredoka One", cursive;
+  color: azure;
+}
+
+* .newsletter {
+  background: black;
+  padding: 1rem 0;
+}
+
+* .newsletter h2 {
+  text-align: center;
+  color: azure;
+  font-size: 1.5rem;
+}
+
+* .newsletter p {
+  text-align: center;
+  color: azure;
+  font-size: 1.0rem;
+}
+
+* .newsletter form {
+  width: 60%;
+  margin: 1rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+* .newsletter form input {
+  width: 70%;
+  padding: 1.0rem;
+  border: none;
+  font-size: 1.0rem;
+  outline: none;
+}
+
+* .newsletter form input[type="submit"] {
+  width: 30%;
+  background: crimson;
+  color: azure;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+* .newsletter form input[type="submit"]:hover {
+  background: #0758af;
+}
+
+* .categories {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
 /*# sourceMappingURL=app.css.map */

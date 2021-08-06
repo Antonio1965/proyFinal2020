@@ -3,15 +3,15 @@
  [
     {
       "catId": "1",
-      "name": "basico"
+      "name": "Básico"
     },
     {
       "catId": "2",
-      "name": "profesional"
+      "name": "Profesional"
     },
     {
       "catId": "3",
-      "name": "militar"
+      "name": "Militar"
     }
     
   ]
