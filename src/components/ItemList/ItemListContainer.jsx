@@ -3,19 +3,23 @@ import { ItemList } from "./ItemList";
 import { Loader } from "../../Loader/Loader";
 import { useParams } from "react-router-dom";
 import { database } from "../Firebase/firebase";
+import { render } from "react-dom";
 
 export const ItemListContainer = () => {
-
+  ///ESTADO DE ITEMS A MOSTRAR
   const [displayItems, setDisplayItems] = useState([]);
 
+  ///OBTENEMOS LA CATEGORIA POR PARAMS
   const { catId } = useParams();
 
+  ///EJECUTAR PROMESA
   useEffect(() => {
-    setDisplayItems([ ]);
+    setDisplayItems([]);
 
-
-    const getItems = () => {
+    //LLAMADA A FIREBASE
+    const getProductos = () => {
       let productos;
+   
       if (!catId) {
         productos = database.collection("productos");
       } else {
@@ -31,13 +35,14 @@ export const ItemListContainer = () => {
       );
     };
 
-    getItems();
-  }, [ catId ]);
+    getProductos();
+  }, [catId]);
 
+  ///RETURN
   return !displayItems.length ? (
     <Loader />
   ) : (
     <ItemList displayItems={displayItems} />
   );
-
 };
+

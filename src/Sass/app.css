@@ -35,7 +35,7 @@
           justify-content: center;
   font-family: "Fredoka One", cursive;
   font-size: 3.5rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.6rem;
   margin-left: 40px;
   color: azure;
 }
@@ -216,6 +216,7 @@
 }
 
 * .volver {
+  border: none;
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 1rem;

@@ -4,6 +4,7 @@ import{ Loader } from "../../Loader/Loader";
 import {ItemDetail } from "./ItemDetail";
 import { database } from "../Firebase/firebase";
 
+
 export const ItemDetailContainer = () => {
 
   const [itemToDisplay, setItemToDisplay] = useState();

@@ -63,7 +63,7 @@ export  function NavBar({title}) {
           <ul className="categories">
                  {categories.map((cat) => (
                 <Link
-                     to={`/category/${cat.id}`}
+                     to={`/category/${cat.catId}`}
                       key={cat.id}
                       className="category-item">
                      {cat.name}

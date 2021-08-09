@@ -11,12 +11,10 @@ import { DataProvider } from "./Context";
 import { Cart } from './components/Cart/Cart';
 import { Signin } from '../src/Signin';
 import { Signup } from '../src/Signup';
-import { useEffect } from "react";
-import { auth } from "./auth";
+// import { useEffect } from "react";
+// import { auth } from "./auth";
 import { Newsletter } from "./components/Newsletter/Newsletter";
-
-
-
+import { Form } from './components/Cart/Form';
 
 export const App = () => {
 
@@ -36,7 +34,7 @@ export const App = () => {
             <Route path="/cart">
               <Cart />
             </Route>
-            <Route path="/category/:catId">
+            <Route exact path="/category/:catId">
               <ItemListContainer/>
             </Route>
             <Route exact path="/">
@@ -44,6 +42,9 @@ export const App = () => {
             </Route>
             <Route path="/item/:id">
               <ItemDetailContainer />
+            </Route>
+            <Route path="/cart">
+              <Form/>
             </Route>
             <Route path="/checkout">
               <Checkout />

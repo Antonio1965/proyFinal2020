@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Context } from "../../Context";
 
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -28,13 +27,13 @@ export const Total = () => {
       <h5>Total items:{quantityCart()}</h5>
       <h5> TOTAL COMPRAS :  {accounting.formatMoney((totalCart()), )}</h5>
       <Link to="/checkout">
-        <Button
+        {/* <Button
           className={classes.button}
           variant="contained"
           color="secondary"
-        >
+          >
           COMPRAR
-        </Button>
+        </Button> */}
       </Link>
     </div>
   );

@@ -18,7 +18,7 @@ export const CartItem = ({ item, removeFromCart }) => {
         <br/>
         <span>
          Sub-Total =  $ {item.quantity * item.price}
-          </span>
+        </span>
         <br />
         <br/>
         <img

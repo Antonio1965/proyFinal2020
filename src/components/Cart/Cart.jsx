@@ -4,6 +4,7 @@ import { Context } from "../../Context";
 import { Total } from "../Total/Total";
 import { CartItem } from "./CartItem";
 import { StyledCart, CartDetail } from "./CartStyles";
+import { Form } from './Form'
 
 
 export const Cart = () => {
@@ -31,7 +32,8 @@ export const Cart = () => {
           ))}
           <Total/>
         </CartDetail>
-      )}
+        )}
+        <Form/>
       </StyledCart>
   );
 };
