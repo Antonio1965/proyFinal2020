@@ -9,15 +9,12 @@ import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer
 import { Checkout } from "./components/CheckoutForm/Checkout";
 import { DataProvider } from "./Context";
 import { Cart } from './components/Cart/Cart';
-import { Signin } from '../src/Signin';
-import { Signup } from '../src/Signup';
-// import { useEffect } from "react";
-// import { auth } from "./auth";
 import { Newsletter } from "./components/Newsletter/Newsletter";
 import { Form } from './components/Cart/Form';
 
-export const App = () => {
 
+
+export const App = () => {
 
   return (
     <>
@@ -25,12 +22,6 @@ export const App = () => {
         <Router>
           <NavBar title="Drone.Co" />
           <Switch>
-            <Route exact path='/signin'>
-              <Signin/>
-              </Route>
-              <Route exact path='/signup'>
-              <Signup/>
-              </Route>
             <Route path="/cart">
               <Cart />
             </Route>

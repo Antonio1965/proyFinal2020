@@ -1,5 +1,4 @@
-import React from "react";
-///Importamos tanto firebase como la base de datos
+import React,{ useEffect, useState } from "react";
 import firebase from "firebase/app";
 import { database } from "../Firebase/firebase";
 import { StyledForm } from "./FormStyles";
@@ -8,10 +7,9 @@ import { Link } from 'react-router-dom';
 
 export const Form = ({ cart, total, clearCart }) => {
   const handleSubmit = (event) => {
-    ///Evitamos el comportamiento default de los forms
+   
     event.preventDefault();
 
-    ///Capturamos la data del usuario
     const userData = {
       name: event.target[0].value,
       surname: event.target[1].value,
@@ -19,16 +17,15 @@ export const Form = ({ cart, total, clearCart }) => {
       email: event.target[3].value,
     };
 
-    ///Juntamos la data de la orden
     const newOrder = {
       buyer: userData,
       items: cart,
       date: new Date().toString(),
       total: total,
     };
-
     ///Traemos la colección de firebase
     const orders = database.collection("orders");
+    
 
     ///Creamos la variable que guardará el ID de la orden
     let orderId;

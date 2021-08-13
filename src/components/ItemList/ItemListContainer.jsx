@@ -23,7 +23,7 @@ export const ItemListContainer = () => {
       if (!catId) {
         productos = database.collection("productos");
       } else {
-        productos = database.collection("productos").where("category", "==", catId);
+        productos = database.collection("productos").where("catId", "==", parseInt(catId));
       }
 
       productos.get().then((query) =>

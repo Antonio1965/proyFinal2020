@@ -75,13 +75,11 @@ export  function NavBar({title}) {
           <Typography variant="h5" component="p">
             <strong>Hello : Guest </strong>
           </Typography>
-          {/* <Link to='/signin'> */}
           <div className={classes.button}>
             <Button  variant= 'outlined'>
            <span className='boton'>Sing In</span> 
             </Button>
           </div>
-            {/* </Link> */}
             <Link to='/cart'>
             <IconButton aria-label="show cart items" color="inherent">
               <Badge badgeContent={quantityCart()} color="secondary">
