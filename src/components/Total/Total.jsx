@@ -1,7 +1,6 @@
-import { makeStyles, Button } from "@material-ui/core";
+import { makeStyles} from "@material-ui/core";
 import accounting from "accounting";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { Context } from "../../Context";
 
 
@@ -26,15 +25,6 @@ export const Total = () => {
     <div className={classes.root}>
       <h5>Total items:{quantityCart()}</h5>
       <h5> TOTAL COMPRAS :  {accounting.formatMoney((totalCart()), )}</h5>
-      <Link to="/checkout">
-        {/* <Button
-          className={classes.button}
-          variant="contained"
-          color="secondary"
-          >
-          COMPRAR
-        </Button> */}
-      </Link>
     </div>
   );
 };

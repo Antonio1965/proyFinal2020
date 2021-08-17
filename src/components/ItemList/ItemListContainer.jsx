@@ -3,7 +3,7 @@ import { ItemList } from "./ItemList";
 import { Loader } from "../../Loader/Loader";
 import { useParams } from "react-router-dom";
 import { database } from "../Firebase/firebase";
-import { render } from "react-dom";
+
 
 export const ItemListContainer = () => {
   ///ESTADO DE ITEMS A MOSTRAR

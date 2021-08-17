@@ -70,8 +70,7 @@ export  function NavBar({title}) {
                  </Link>
                        ))}
           </ul>
-      
-          <div className={classes.grow} />
+             <div className={classes.grow} />
           <Typography variant="h5" component="p">
             <strong>Hello : Guest </strong>
           </Typography>
