@@ -8,7 +8,7 @@ import { Form } from './Form'
 
 
 export const Cart = () => {
-  const { cart, removeFromCart } = useContext(Context);
+  const { cart, removeFromCart, clearCart } = useContext(Context);
 
   return (
     
@@ -33,7 +33,7 @@ export const Cart = () => {
           <Total/>
         </CartDetail>
         )}
-        <Form/>
+        <Form cart={cart} clearCart={clearCart}/>
       </StyledCart>
   );
 };

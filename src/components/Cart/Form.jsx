@@ -4,7 +4,7 @@ import { database } from "../Firebase/firebase";
 import { StyledForm } from "./FormStyles";
 
 
-export const Form = ({ cart, total, clearCart }) => {
+export const Form = ({ cart, clearCart }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -19,13 +19,13 @@ export const Form = ({ cart, total, clearCart }) => {
       buyer: userData,
       items: cart,
       date: new Date().toString(),
-      total: total,
+      
     };
 
     const orders = database.collection("orders");
     
     let orderId;
-
+  
     orders
       .add(newOrder)
       .then((response) => {
@@ -36,7 +36,7 @@ export const Form = ({ cart, total, clearCart }) => {
       });
 
   
-    const itemsToCheck = database.collection("orders").where(
+    const itemsToCheck = database.collection("items").where(
       firebase.firestore.FieldPath.documentId(),
       "in",
       cart.map((item) => item.id)
