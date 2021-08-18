@@ -20,15 +20,17 @@ La pagina se volverá a cargar si realiza modificaciones.
 
 También vera cualquier error de codigo en la consola.
 
-###Temática del Market Place.
+### Temática del Market Place.
 
 ¿Qué productos o servicios brindará nuestro sitio?
 
 Se ofrecen productos de tecnologica de ultima generacion, de drones a la aplicaciones de distintas categorias: básico, profesional y militar.
 
+Y ofrecen asesorias ténicas, cursos especializado de categorias, ventas de accesorios.
+
 ¿Quién será nuestra audiencia objetivo?
 
-Para todo el publico en general.
+Para todo el publico en general. Para hobbies, uso profesional y militar.
 
 ¿Cómo ajustaremos nuestra oferta a ese público?
 
