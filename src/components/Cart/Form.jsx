@@ -4,7 +4,8 @@ import { database } from "../Firebase/firebase";
 import { StyledForm } from "./FormStyles";
 
 
-export const Form = ({ cart, clearCart }) => {
+
+export const Form = ({ cart, clearCart}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -19,13 +20,13 @@ export const Form = ({ cart, clearCart }) => {
       buyer: userData,
       items: cart,
       date: new Date().toString(),
-      
+       
     };
 
     const orders = database.collection("orders");
     
     let orderId;
-  
+
     orders
       .add(newOrder)
       .then((response) => {
@@ -62,7 +63,7 @@ export const Form = ({ cart, clearCart }) => {
       if (outOfStockItems.length === 0) {
         batch.commit().then(() => {
           alert("ORDEN GENERADA CON EXITO! \n ID: " + orderId);
-          clearCart();
+             clearCart();
         });
       } else {
         alert("ERROR: Hay items que ya no tienen stock suficiente.");

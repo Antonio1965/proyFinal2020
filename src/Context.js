@@ -32,6 +32,7 @@ export const DataProvider = ({ children }) => {
   const quantityCart = () => {
     return cart.reduce( (acc, cartItem) => acc + cartItem.quantity, 0)
   }
+
   
   const clearCart = () => setCart([]);
 

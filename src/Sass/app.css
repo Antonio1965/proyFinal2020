@@ -48,6 +48,10 @@
   color: azure;
 }
 
+* .categories {
+  margin-right: auto;
+}
+
 * .footer {
   color: azure;
   font-family: "Fredoka One", cursive;

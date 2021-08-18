@@ -25,7 +25,7 @@ export const ItemDetailContainer = () => {
       getSelectedItem()
     },
 
-    [idParams]
+    []
   );
 
   return !itemToDisplay ? (<Loader/> ) : (<ItemDetail itemToDisplay={itemToDisplay} />);

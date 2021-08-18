@@ -6,7 +6,6 @@ import { ItemListContainer } from "./components/ItemList/ItemListContainer";
 import { Error404 } from "./components/General/Error404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
-import { Checkout } from "./components/CheckoutForm/Checkout";
 import { DataProvider } from "./Context";
 import { Cart } from './components/Cart/Cart';
 import { Newsletter } from "./components/Newsletter/Newsletter";
@@ -36,9 +35,6 @@ export const App = () => {
             </Route>
             <Route path="/cart">
               <Form/>
-            </Route>
-            <Route path="/checkout">
-              <Checkout />
             </Route>
             <Route component={Error404} />
           </Switch>

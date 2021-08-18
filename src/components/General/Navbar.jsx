@@ -3,8 +3,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import {Badge} from '@material-ui/core';
 import logo from '../../img/logo/antonio1.svg';
@@ -70,7 +68,7 @@ export  function NavBar({title}) {
                  </Link>
                        ))}
           </ul>
-             <div className={classes.grow} />
+             {/* <div className={classes.grow} />
           <Typography variant="h5" component="p">
             <strong>Hello : Guest </strong>
           </Typography>
@@ -78,7 +76,7 @@ export  function NavBar({title}) {
             <Button  variant= 'outlined'>
            <span className='boton'>Sing In</span> 
             </Button>
-          </div>
+          </div> */}
             <Link to='/cart'>
             <IconButton aria-label="show cart items" color="inherent">
               <Badge badgeContent={quantityCart()} color="secondary">
