@@ -28,6 +28,7 @@ Para todo el publico en general.
 
 ¿Cómo ajustaremos nuestra oferta a ese público?
 
-Ofrecer aparatos y servicios adaptados al uso de la tecnologia moderna para distintas gategorias.
+Ofrecer aparatos y servicios adaptados al uso de la tecnologia moderna actual para distintas perfil profesional.
+
 
 
