@@ -6,6 +6,10 @@ Este Proyecto se inicio con [create react App] ( htpps://github.com/Antonio1965/
 
 En el directorio del proyecto , puede ejecutar:
 
+### "npm install"
+
+luego,
+
 ### `npm start`
 
 Ejecuta la aplicacion en modo de desarrollo,
