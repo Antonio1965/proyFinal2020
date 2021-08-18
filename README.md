@@ -24,7 +24,7 @@ También vera cualquier error de codigo en la consola.
 
 ¿Qué productos o servicios brindará nuestro sitio?
 
-Se ofrecen productos de tecnologica de ultima generacion, de drones a la aplicaciones de distintas categorias: básico, profesional y militar.
+Se ofrecen productos de tecnologica de última generación, de drones a la aplicaciones de distintas categorias: básico, profesional y militar.
 
 Y ofrecen asesorias ténicas, cursos especializado de categorias, ventas de accesorios.
 
