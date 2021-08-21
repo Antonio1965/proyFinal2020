@@ -1,12 +1,17 @@
-import React from "react";
 import firebase from "firebase/app";
 import { database } from "../Firebase/firebase";
 import { StyledForm } from "./FormStyles";
-
+import { useForm } from "react-hook-form";
 
 
 export const Form = ({ cart, clearCart}) => {
-  const handleSubmit = (event) => {
+
+  const {register, formState:{ errors }, handleSubmit } = useForm();
+
+  const onSubmit = (data, event) =>{
+    event.target.reset();
+    console.log(data);
+  
     event.preventDefault();
 
     const userData = {
@@ -70,15 +75,20 @@ export const Form = ({ cart, clearCart}) => {
       }
     });
   };
-
+  
   return (
     
-     <StyledForm onSubmit={handleSubmit}>
+     <StyledForm onSubmit={handleSubmit(onSubmit)}>
       <h2>Finalizar Compra</h2>
-      <input placeholder="Nombre" type="text" />
-      <input placeholder="Apellido" type="text" />
-      <input placeholder="Teléfono" type="tel" />
-      <input placeholder="E-mail" type="email" />
+      <input placeholder="Nombre" {...register("nombre", { required: true })} />
+      {errors.nombre?.type === 'required' && "Campo Obligatorio"}
+      <input placeholder="Apellido" {...register("apellido", { required: true })} />
+      {errors.nombre?.type === 'required' && "Campo Obligatorio"}
+      <input placeholder="Telefono" {...register("telefono", { required: true })} />
+      {errors.nombre?.type === 'required' && "Campo Obligatorio"}
+      <input placeholder="E-mail" {...register("email", { required: true })} />
+      {errors.nombre?.type === 'required' && "Campo Obligatorio"}
+      
       <button type="submit">COMPRAR</button>
      </StyledForm>
     

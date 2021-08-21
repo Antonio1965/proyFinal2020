@@ -22,7 +22,7 @@ export const ItemDetailContainer = () => {
   useEffect(
     () => {
       setItemToDisplay(); 
-      getSelectedItem()
+      getSelectedItem();
     },
 
     []

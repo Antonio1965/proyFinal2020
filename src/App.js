@@ -1,5 +1,4 @@
 import "./Sass/app.css";
-
 import { NavBar } from "./components/General/Navbar";
 import { Footer } from "./components/General/Footer";
 import { ItemListContainer } from "./components/ItemList/ItemListContainer";
@@ -11,8 +10,6 @@ import { Cart } from './components/Cart/Cart';
 import { Newsletter } from "./components/Newsletter/Newsletter";
 import { Form } from './components/Cart/Form';
 
-
-
 export const App = () => {
 
   return (
@@ -22,7 +19,7 @@ export const App = () => {
           <NavBar title="Drone.Co" />
           <Switch>
             <Route path="/cart">
-              <Cart />
+              <Cart/>
             </Route>
             <Route exact path="/category/:catId">
               <ItemListContainer/>
